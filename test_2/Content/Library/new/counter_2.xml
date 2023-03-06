@@ -3,7 +3,7 @@
   <descriptionCdata><![CDATA[16a95097-65c0-44e6-a984-3172b3784653.2ee6d1e7-2b64-44ee-b6c6-692c0e799946.description=Counts from one number to another number.\n\n<pre>\nInputs\:\nfrom - The number to start counting at.\nto - The number to count to.\nincrementBy - The number to increment by while counting. If unspecified this is 1. If you wanted to count 2,4,6,8 this would be 2.\nreset - If true, then the counter will restart counting from the beginning.\n\nNOTE\: These values must be between -9223372036854775808 and 9223372036854775807\n\nReturns\:\nThe number that was just counted.\n\nNote\: the primary result is resultString, Result can also be used. result (All lower case) should not be used as it is the response code.\n\nResponses\:\nhas more - Not yet done counting.\nno more - Done counting. This will only be returned once, then counting restarts.\nfailure - Something went wrong.\n</pre>
 16a95097-65c0-44e6-a984-3172b3784653.51cdaab5-cf86-433b-88f8-b2409ed85199.prompt=\u30E1\u30C3\u30BB\u30FC\u30B8
 16a95097-65c0-44e6-a984-3172b3784653.68f3fdd4-2f61-43d6-be59-abeb71215bc1.callout=`1234567890-\=][poiuytrewqasdfghjkl;'/.,mnbvcxz\t\\~\!@\#$%^&*()_+}{POIUYTREWQASDFGHGHJKL\:"|"\:L?><MNBVCXZ`~
-16a95097-65c0-44e6-a984-3172b3784653.b05bb93b-4c8d-482a-ad9c-cee305129f80.callout=Hello\!\!\!\!\!\!\!\!\n\n\t\t\thow are you? \uD83D\uDCA9how are you?\uD83D\uDCA9\uD83D\uDCA9 \uD83D\uDCA9\n\n    \\\\\\\\\\\n     \\\\\\\\\t\t\tHai\=\=\=@@@   \n\\\\\\\n\\\\\n\\
+16a95097-65c0-44e6-a984-3172b3784653.b05bb93b-4c8d-482a-ad9c-cee305129f80.callout=Hello\!\!\!\!\!\!\!\!\n\n\t\t\thow are you? \uD83D\uDCA9how\t are\t\t you?\uD83D\uDCA9\uD83D\uDCA9 \uD83D\uDCA9\n\n    \\\\\\\\\\\n     \\\\\\\\\t\t\tHai\=\=\=@@@   \n\\\\\\\n\\\\\n\\
 ]]></descriptionCdata>
   <annotation></annotation>
   <name>counter_2</name>
@@ -45,8 +45,8 @@
     <callout id="b05bb93b-4c8d-482a-ad9c-cee305129f80">
       <text>16a95097-65c0-44e6-a984-3172b3784653.b05bb93b-4c8d-482a-ad9c-cee305129f80.callout</text>
       <bounds>
-        <x>388.0</x>
-        <y>236.0</y>
+        <x>386.0</x>
+        <y>229.0</y>
         <width>557.0</width>
         <height>391.0</height>
       </bounds>
