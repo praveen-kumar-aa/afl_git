@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <flow id="16a95097-65c0-44e6-a984-3172b3784653">
   <descriptionCdata><![CDATA[16a95097-65c0-44e6-a984-3172b3784653.2ee6d1e7-2b64-44ee-b6c6-692c0e799946.description=Counts from one number to another number.\n\n<pre>\nInputs\:\nfrom - The number to start counting at.\nto - The number to count to.\nincrementBy - The number to increment by while counting. If unspecified this is 1. If you wanted to count 2,4,6,8 this would be 2.\nreset - If true, then the counter will restart counting from the beginning.\n\nNOTE\: These values must be between -9223372036854775808 and 9223372036854775807\n\nReturns\:\nThe number that was just counted.\n\nNote\: the primary result is resultString, Result can also be used. result (All lower case) should not be used as it is the response code.\n\nResponses\:\nhas more - Not yet done counting.\nno more - Done counting. This will only be returned once, then counting restarts.\nfailure - Something went wrong.\n</pre>
-16a95097-65c0-44e6-a984-3172b3784653.51cdaab5-cf86-433b-88f8-b2409ed85199.prompt=\u30E1\u30C3\u30BB\u30FC\u30B8
 16a95097-65c0-44e6-a984-3172b3784653.68f3fdd4-2f61-43d6-be59-abeb71215bc1.callout=`1234567890-\=][poiuytrewqasdfghjkl;'/.,mnbvcxz\t\\~\!@\#$%^&*()_+}{POIUYTREWQASDFGHGHJKL\:"|"\:L?><MNBVCXZ`~
 16a95097-65c0-44e6-a984-3172b3784653.b05bb93b-4c8d-482a-ad9c-cee305129f80.callout=Hello\!\!\!\!\!\!\!\!\n\n\t\t\thow are you? \uD83D\uDCA9how\t are\t\t you?\uD83D\uDCA9\uD83D\uDCA9 \uD83D\uDCA9\n\n    \\\\\\\\\\\n     \\\\\\\\\t\t\tHai\=\=\=@@@   \n\\\\\\\n\\\\\n\\
 ]]></descriptionCdata>
   <annotation></annotation>
   <name>counter_2</name>
-  <categories/>
+  <categories>
+    <category>
+      <refId>8097a2b0-6d0f-4650-982c-a57e88d437cc</refId>
+      <refName>Application Server (J2EE)</refName>
+    </category>
+  </categories>
   <inputs/>
   <possibleResponses>
     <opResponse id="47e76a04-e2cb-4094-bd57-128d1603cd47">
@@ -90,7 +94,7 @@
       <scriptResultStep>false</scriptResultStep>
       <userPrompt></userPrompt>
       <bindings>
-        <userInputBinding id="e45b0acc-f9c3-4e43-a25c-ebd928cc2d58">
+        <staticBinding id="631704ed-a9fa-4c0e-83f7-92cc1b3e1953">
           <annotation></annotation>
           <assignFromContext>false</assignFromContext>
           <assignToContext>false</assignToContext>
@@ -100,12 +104,9 @@
           <isPersisted>true</isPersisted>
           <inputSymbol>from</inputSymbol>
           <listDelimiter>,</listDelimiter>
+          <value>0</value>
           <record>false</record>
-          <prompt></prompt>
-          <isMultiSelect>false</isMultiSelect>
-          <dynPickListKey>select</dynPickListKey>
-          <sourceDelimiter>,</sourceDelimiter>
-        </userInputBinding>
+        </staticBinding>
         <staticBinding id="fd6fd790-333d-4ec5-944b-8030eee431e6">
           <annotation></annotation>
           <assignFromContext>false</assignFromContext>
@@ -119,7 +120,7 @@
           <value>hello!=,&#12513;&#12483;&#12475;&#12540;&#12472;</value>
           <record>false</record>
         </staticBinding>
-        <userInputBinding id="51cdaab5-cf86-433b-88f8-b2409ed85199">
+        <staticBinding id="17d0177a-95f3-4813-a775-7a748c89a2f4">
           <annotation></annotation>
           <fromContextKey>count_2</fromContextKey>
           <assignFromContext>true</assignFromContext>
@@ -130,11 +131,9 @@
           <isPersisted>true</isPersisted>
           <inputSymbol>to</inputSymbol>
           <listDelimiter>,</listDelimiter>
+          <value>5</value>
           <record>false</record>
-          <prompt>16a95097-65c0-44e6-a984-3172b3784653.51cdaab5-cf86-433b-88f8-b2409ed85199.prompt</prompt>
-          <isMultiSelect>false</isMultiSelect>
-          <sourceDelimiter>|</sourceDelimiter>
-        </userInputBinding>
+        </staticBinding>
         <staticBinding id="197dddee-902e-4a9a-b1ab-402a5fbc8725">
           <annotation></annotation>
           <assignFromContext>false</assignFromContext>
@@ -268,16 +267,31 @@
         <refId>c62eeb58-f329-4ae3-b336-54bdc5c9f3d6</refId>
       </opRef>
       <assignments>
+        <flowVariableAssignment id="0551a15c-0902-4fc1-9698-ee65a87eea7b">
+          <annotation></annotation>
+          <name>assignment</name>
+          <action>OVERWRITE</action>
+          <assignmentTargetType>FLOW_VARIABLE</assignmentTargetType>
+          <contextKey>count</contextKey>
+          <expression id="85888ecd-ba88-4e11-8a29-c0c6a675ae4b">
+            <annotation></annotation>
+            <name>Result Field: result</name>
+            <fieldName>result</fieldName>
+            <sourceType>RAWRESULT</sourceType>
+            <filters/>
+          </expression>
+          <encrypted>true</encrypted>
+        </flowVariableAssignment>
         <flowVariableAssignment id="12ce12ca-2b7b-457e-8d4d-a613f1ce5d25">
           <annotation></annotation>
           <name>assignment</name>
           <action>OVERWRITE</action>
           <assignmentTargetType>FLOW_VARIABLE</assignmentTargetType>
           <contextKey>resultString</contextKey>
-          <expression id="19096277-921a-4793-b143-664dca3bbb16">
+          <expression id="226772bb-f466-4b5d-ba03-eac6f51dc948">
             <annotation></annotation>
-            <name>Result Field: resultString</name>
-            <fieldName>resultString</fieldName>
+            <name>Result Field: result</name>
+            <fieldName>result</fieldName>
             <sourceType>RAWRESULT</sourceType>
             <filters>
               <concat id="f69b3a8f-41e9-488f-9e84-929856e3da97">
@@ -304,12 +318,26 @@
               <regexFilter id="5aa9f404-fe5c-4892-8233-bc83211f5361">
                 <annotation></annotation>
                 <name>Regular Expression</name>
-                <expression>.*</expression>
+                <expression>dsfghfgjh</expression>
                 <ignoreCase>false</ignoreCase>
                 <regType>JAVA</regType>
                 <entireString>true</entireString>
                 <multiLine>false</multiLine>
               </regexFilter>
+              <replaceAllFilter id="6c1951a6-4e73-4d04-8927-99a05faf3104">
+                <annotation></annotation>
+                <name>Replace</name>
+                <ignoreCase>false</ignoreCase>
+                <searchString>sdafs</searchString>
+                <replaceString>asdfsdg</replaceString>
+                <replaceType>ALL</replaceType>
+              </replaceAllFilter>
+              <concat id="217dae37-5fde-46cc-9f7f-4c4b9969093e">
+                <annotation></annotation>
+                <name>Format</name>
+                <text>safdgf</text>
+                <position>REPLACE</position>
+              </concat>
             </filters>
           </expression>
         </flowVariableAssignment>
