@@ -8,7 +8,7 @@
   <name>counter_2</name>
   <categories>
     <category>
-      <refId>8097a2b0-6d0f-4650-982c-a57e88d437cc</refId>
+      <refId>8ddb00bd-89f3-4a0c-8a34-94c9a1717488</refId>
       <refName>Application Server (J2EE)</refName>
     </category>
   </categories>
@@ -31,7 +31,193 @@
       <matchRules/>
     </opResponse>
   </possibleResponses>
-  <availableResultExpressions/>
+  <availableResultExpressions>
+    <expression id="36cdda97-6f1c-44f9-94ec-c9916a31bccc">
+      <annotation></annotation>
+      <name>a</name>
+      <fieldName>FailureMessage</fieldName>
+      <sourceType>RAWRESULT</sourceType>
+      <filters>
+        <regexFilter id="7985a9be-f479-4638-99b9-30bf9517ed33">
+          <annotation></annotation>
+          <name>Regular Expression</name>
+          <expression>.*</expression>
+          <ignoreCase>false</ignoreCase>
+          <regType>JAVA</regType>
+          <entireString>true</entireString>
+          <multiLine>false</multiLine>
+        </regexFilter>
+        <removeDuplicatesFilter id="7f5860ce-60cf-4d38-bc4f-4256193c4304">
+          <annotation></annotation>
+          <name>Remove Duplicate Lines</name>
+          <consecutive>true</consecutive>
+        </removeDuplicatesFilter>
+        <xmlGetElementsFilter id="09458d21-a6ec-486d-8d53-3af94d1da2ca">
+          <annotation></annotation>
+          <name>XML Get Element</name>
+          <elementPath></elementPath>
+        </xmlGetElementsFilter>
+        <tableFilter id="156326b5-41ce-4861-bfa3-58a9815b8c2c">
+          <annotation></annotation>
+          <name>Table</name>
+          <ascending>false</ascending>
+          <columnDelimiter>WHITESPACE</columnDelimiter>
+          <firstRowHeader>false</firstRowHeader>
+          <lineDelimintor>NEWLINE</lineDelimintor>
+          <selectCol>0</selectCol>
+          <selectHeight>1</selectHeight>
+          <selectRow>0</selectRow>
+          <selectWidth>1</selectWidth>
+          <sortColumn>-1</sortColumn>
+          <stripFirstRow>false</stripFirstRow>
+        </tableFilter>
+        <scriptletFilter id="fa02f872-728a-40e5-8804-2343c28175cd">
+          <annotation></annotation>
+          <name>Scriptlet</name>
+          <scriptlet id="9d946d86-b03a-45df-b897-456fcecc4c1e">
+            <annotation></annotation>
+            <name>default</name>
+            <script>if (scriptletInput !== null) {
+  scriptletResult = &apos;Timestamp:&apos; + new java.util.Date() + &apos;\n&apos; + scriptletInput + &apos;\n&apos; + scriptletInput.length + &apos; characters&apos;
+}</script>
+            <type>RHINO</type>
+          </scriptlet>
+        </scriptletFilter>
+      </filters>
+    </expression>
+    <expression id="0a4bc574-af6d-4090-bb9d-6075eb192f6e">
+      <annotation></annotation>
+      <name>b</name>
+      <fieldName>FailureMessage</fieldName>
+      <sourceType>RAWRESULT</sourceType>
+      <filters>
+        <caseFilter id="4c71f54c-5d0e-4d45-9041-70b88a21e767">
+          <annotation></annotation>
+          <name>Diff Case</name>
+          <toUpper>false</toUpper>
+        </caseFilter>
+        <numberFilter id="a4bf0426-2b0c-4555-aa4c-96546a987342">
+          <annotation></annotation>
+          <name>Extract Number</name>
+        </numberFilter>
+      </filters>
+    </expression>
+    <expression id="c0539831-753e-4316-b133-b371f95d2316">
+      <annotation></annotation>
+      <name>c</name>
+      <fieldName>FailureMessage</fieldName>
+      <sourceType>RAWRESULT</sourceType>
+      <filters/>
+    </expression>
+    <expression id="ca0cf8fd-f7db-4601-8d88-09bc39d51dc3">
+      <annotation></annotation>
+      <name>d</name>
+      <fieldName>FailureMessage</fieldName>
+      <sourceType>RAWRESULT</sourceType>
+      <filters/>
+    </expression>
+    <expression id="32e0d5b4-ab75-4a0b-a79d-d2c4018bebdb">
+      <annotation></annotation>
+      <name>e</name>
+      <fieldName>FailureMessage</fieldName>
+      <sourceType>RAWRESULT</sourceType>
+      <filters>
+        <selectLineFilter id="bfb1e50c-df7c-4596-9f3e-f923ca433f24">
+          <annotation></annotation>
+          <name>Select Line</name>
+          <text></text>
+          <type>FIRST_LINE_STARTING_WITH</type>
+          <autoSelectLineEnding>false</autoSelectLineEnding>
+          <windowsLineEnding>false</windowsLineEnding>
+          <unixLineEnding>true</unixLineEnding>
+        </selectLineFilter>
+        <removeDuplicatesFilter id="0a417d15-d693-4b29-aebd-cc802331a87e">
+          <annotation></annotation>
+          <name>Remove Duplicate Lines</name>
+          <consecutive>true</consecutive>
+        </removeDuplicatesFilter>
+        <numberFilter id="08a1a68b-6fe9-4e5d-948a-223758a5a383">
+          <annotation></annotation>
+          <name>Extract Number</name>
+        </numberFilter>
+        <caseFilter id="e9051b3c-bf4c-4323-acb9-151bea7d88ae">
+          <annotation></annotation>
+          <name>Diff Case</name>
+          <toUpper>false</toUpper>
+        </caseFilter>
+        <xmlGetAttributeFilter id="df99b960-67e8-4803-b57b-7796046fbd75">
+          <annotation></annotation>
+          <name>XML Get Attribute</name>
+          <elementPath></elementPath>
+          <includeSubElements>false</includeSubElements>
+          <resultAsFirstResult>true</resultAsFirstResult>
+          <resultAsTable>false</resultAsTable>
+        </xmlGetAttributeFilter>
+        <xmlGetElementValueFilter id="7fec17e5-895c-477a-a225-827dee0b93e0">
+          <annotation></annotation>
+          <name>XML Get Element Value</name>
+          <elementPath></elementPath>
+        </xmlGetElementValueFilter>
+        <xmlGetElementsFilter id="cdd927c3-84a6-4f2e-8454-56429db3ba5f">
+          <annotation></annotation>
+          <name>XML Get Element</name>
+          <elementPath></elementPath>
+        </xmlGetElementsFilter>
+        <xpathFilter id="c0cf3c27-ff0a-43b4-a956-f094851432e9">
+          <annotation></annotation>
+          <name>XPath Query</name>
+          <xpathQuery></xpathQuery>
+        </xpathFilter>
+        <stripTrailingFilter id="273b89da-ae1a-45ad-8acf-da0e27f53877">
+          <annotation></annotation>
+          <name>Strip</name>
+          <strip></strip>
+          <type>ALL_CHARACTERS_UP_TO_AND_INCLUDING</type>
+        </stripTrailingFilter>
+        <concat id="b2ed28e6-b8a1-44cc-8924-7a632ee422d8">
+          <annotation></annotation>
+          <name>Format</name>
+          <text></text>
+          <position>END</position>
+        </concat>
+        <countLinesFilter id="0b7a59f2-fcad-44ae-a783-8efb964f3a0d">
+          <annotation></annotation>
+          <name>Line Count</name>
+        </countLinesFilter>
+        <stripWhitespaceFilter id="59bf9edc-5f57-4250-a14c-a1b512c94134">
+          <annotation></annotation>
+          <name>Strip Whitespace</name>
+        </stripWhitespaceFilter>
+        <countLinesFilter id="799e4fa9-729f-453b-a28f-6d9613de03df">
+          <annotation></annotation>
+          <name>Line Count</name>
+        </countLinesFilter>
+        <countLinesFilter id="fcb8fcbb-b9a0-48f1-8b39-31623aa54856">
+          <annotation></annotation>
+          <name>Line Count</name>
+        </countLinesFilter>
+        <removeDuplicatesFilter id="2f42c1c7-1e47-49b1-9096-46812ade201d">
+          <annotation></annotation>
+          <name>Remove Duplicate Lines</name>
+          <consecutive>true</consecutive>
+        </removeDuplicatesFilter>
+        <replaceAllFilter id="0d8e8c92-7fb4-4f56-bcac-9c2d310537a2">
+          <annotation></annotation>
+          <name>Replace</name>
+          <ignoreCase>false</ignoreCase>
+          <replaceType>ALL</replaceType>
+        </replaceAllFilter>
+        <roundingFilter id="3d2830a7-0788-4022-bdc7-69249ad83290">
+          <annotation></annotation>
+          <name>Round Number</name>
+          <numPlaces>0</numPlaces>
+          <ceiling>false</ceiling>
+          <floor>false</floor>
+          <round>true</round>
+        </roundingFilter>
+      </filters>
+    </expression>
+  </availableResultExpressions>
   <resultExpression id="49816b6d-0ec0-4a7a-9702-35f9f6762f8d">
     <annotation></annotation>
     <name>FailureMessage</name>
