@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operation id="657e5b59-d5db-48d0-ab76-4ce14cc1b304">
+  <descriptionCdata><![CDATA[657e5b59-d5db-48d0-ab76-4ce14cc1b304.description=<pre>Generates UUID.\n\nInputs\:\nNone\n\nResponses\:\nsuccess - The operation completed Successfully.\n\nReturns\:\nUUID [Universally Unique IDentifier] </pre>
+]]></descriptionCdata>
+  <annotation>657e5b59-d5db-48d0-ab76-4ce14cc1b304.description</annotation>
+  <name>UUID_attached</name>
+  <categories/>
+  <inputs/>
+  <possibleResponses>
+    <opResponse id="804d3847-35b1-4c0a-9f3b-084b2d8b7454">
+      <annotation></annotation>
+      <name>success</name>
+      <isDefault>true</isDefault>
+      <onFailure>false</onFailure>
+      <type>RESOLVED</type>
+      <matchRules>
+        <expression id="ca3ff6ff-8813-4cca-b3bb-121b727b9062">
+          <annotation></annotation>
+          <name>result</name>
+          <fieldName>result</fieldName>
+          <sourceType>RAWRESULT</sourceType>
+          <compare id="88d2db43-7ca0-40f2-bf22-c8094c6093b8">
+            <annotation></annotation>
+            <name>Config Item</name>
+            <text>success</text>
+            <matchType>=</matchType>
+          </compare>
+          <filters/>
+        </expression>
+      </matchRules>
+    </opResponse>
+  </possibleResponses>
+  <availableResultExpressions/>
+  <resultExpression id="9a98d11b-c49f-4cce-9922-de351f1704f8">
+    <annotation></annotation>
+    <name>resultString</name>
+    <fieldName>resultString</fieldName>
+    <sourceType>RAWRESULT</sourceType>
+    <filters/>
+  </resultExpression>
+  <iconSpec id="0de383df-85f7-4606-9aac-f83789aed538">
+    <baseIcon>index.png</baseIcon>
+    <basePath>/Others/</basePath>
+    <readOnly>false</readOnly>
+    <layers>
+      <iconSpec id="6b1af187-fdf0-4164-b7d3-b2a1e45b8255">
+        <baseIcon>wrench.png</baseIcon>
+        <basePath>/Annotations/</basePath>
+        <readOnly>false</readOnly>
+        <layers/>
+      </iconSpec>
+    </layers>
+  </iconSpec>
+  <opRef>
+    <refId>fcf29035-446d-4868-b2e5-50e3dd0cbd0a</refId>
+  </opRef>
+  <fieldValues/>
+  <groupAliasRef>
+    <refId>ba61ab47-805e-4fce-a272-bff1949fcbf4</refId>
+    <refName>ba61ab47-805e-4fce-a272-bff1949fcbf4</refName>
+  </groupAliasRef>
+  <overrideGroupAlias>${overrideJRAS}</overrideGroupAlias>
+</operation>
