@@ -210,7 +210,7 @@
         <roundingFilter id="3d2830a7-0788-4022-bdc7-69249ad83290">
           <annotation></annotation>
           <name>Round Number</name>
-          <numPlaces>0</numPlaces>
+          <numPlaces>-3</numPlaces>
           <ceiling>false</ceiling>
           <floor>false</floor>
           <round>true</round>
