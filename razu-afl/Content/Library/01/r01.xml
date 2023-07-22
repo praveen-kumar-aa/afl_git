@@ -1205,8 +1205,20 @@ user = scriptletContext.getSystemAccountUsername(&quot;accounts/myaccount&quot;)
                   <selectRangeFilter id="dc2787ea-1801-40dc-819c-b92e5822909f">
                     <annotation></annotation>
                     <name>Select Range</name>
-                    <start>42</start>
-                    <length>44</length>
+                    <start>-42</start>
+                    <length>2147483648</length>
+                  </selectRangeFilter>
+				  <selectRangeFilter id="dc2787ea-1801-40dc-819c-b92e5822549f">
+                    <annotation></annotation>
+                    <name>Select Range</name>
+                    <start>-4</start>
+                    <length>2147483647</length>
+                  </selectRangeFilter>
+				  <selectRangeFilter id="dc2787ea-1801-40dc-567c-b92e5822549f">
+                    <annotation></annotation>
+                    <name>Select Range</name>
+                    <start>5</start>
+                    <length>2147483649</length>
                   </selectRangeFilter>
                   <sortFilter id="f8da54ef-78e6-4acb-83ea-e6faed30d57f">
                     <annotation></annotation>
