@@ -23,8 +23,8 @@
       <prompt>62b595b3-e393-4c1a-979d-255d4487fa8c.09d3017c-6797-4311-945b-53fe20c440bf.prompt</prompt>
       <isMultiSelect>false</isMultiSelect>
       <link>
-        <refId>8d43ad14-5b6e-4710-b221-57c0e1a0998d</refId>
-        <refName>MOOGSOFT_EVENT_TYPES</refName>
+        <refId>40e4562a-7197-45ee-9f36-e5d03f255b10</refId>
+        <refName>C</refName>
       </link>
       <sourceDelimiter>|</sourceDelimiter>
     </userInputBinding>
@@ -42,8 +42,8 @@
       <prompt>62b595b3-e393-4c1a-979d-255d4487fa8c.8e263845-87f0-4a65-93f8-e005f4a6b80a.prompt</prompt>
       <isMultiSelect>false</isMultiSelect>
       <link>
-        <refId>77420593-642c-4462-a3ed-5ae0560a0384</refId>
-        <refName>B</refName>
+        <refId>58d0d759-0c59-4310-9989-081a7a273863</refId>
+        <refName>D</refName>
       </link>
       <sourceDelimiter>|</sourceDelimiter>
     </userInputBinding>
@@ -78,6 +78,25 @@
       <isMultiSelect>false</isMultiSelect>
       <dynPickListKey>inp1</dynPickListKey>
       <sourceDelimiter></sourceDelimiter>
+    </userInputBinding>
+    <userInputBinding id="3c4fe48f-6b87-4597-815d-41592bac18ed">
+      <annotation></annotation>
+      <assignFromContext>false</assignFromContext>
+      <assignToContext>false</assignToContext>
+      <inputType>STRING</inputType>
+      <isList>false</isList>
+      <required>false</required>
+      <isPersisted>true</isPersisted>
+      <inputSymbol>inp5</inputSymbol>
+      <listDelimiter>,</listDelimiter>
+      <record>false</record>
+      <validationFormat>
+        <refId>2a5d0e55-5a3c-4688-988e-ab7d1e939d66</refId>
+        <refName>B</refName>
+      </validationFormat>
+      <prompt></prompt>
+      <isMultiSelect>false</isMultiSelect>
+      <sourceDelimiter>|</sourceDelimiter>
     </userInputBinding>
   </inputs>
   <possibleResponses>
