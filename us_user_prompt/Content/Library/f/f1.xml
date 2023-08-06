@@ -28,6 +28,40 @@
       </link>
       <sourceDelimiter>|</sourceDelimiter>
     </userInputBinding>
+    <identityBinding id="96d34f93-5d87-4a8f-ab4a-37cf98931e2f">
+      <annotation></annotation>
+      <assignFromContext>false</assignFromContext>
+      <assignToContext>false</assignToContext>
+      <inputType>STRING</inputType>
+      <isList>false</isList>
+      <required>false</required>
+      <isPersisted>true</isPersisted>
+      <inputSymbol>inp6</inputSymbol>
+      <listDelimiter>,</listDelimiter>
+      <record>false</record>
+      <link>
+        <refId>37ba9786-61df-4cf4-b173-d306a8ec8cd4</refId>
+        <refName>B</refName>
+      </link>
+      <identityAttribute>USERNAME</identityAttribute>
+    </identityBinding>
+    <identityBinding id="d97110fb-ef55-40b3-9dd5-59ca52d84e8d">
+      <annotation></annotation>
+      <assignFromContext>false</assignFromContext>
+      <assignToContext>false</assignToContext>
+      <inputType>ENCRYPTED</inputType>
+      <isList>false</isList>
+      <required>false</required>
+      <isPersisted>true</isPersisted>
+      <inputSymbol>inp7</inputSymbol>
+      <listDelimiter>,</listDelimiter>
+      <record>false</record>
+      <link>
+        <refId>aa526ebc-d077-47e5-a2cd-bc6a0c5eba75</refId>
+        <refName>A</refName>
+      </link>
+      <identityAttribute>PASSWORD</identityAttribute>
+    </identityBinding>
     <userInputBinding id="8e263845-87f0-4a65-93f8-e005f4a6b80a">
       <annotation></annotation>
       <assignFromContext>false</assignFromContext>
@@ -41,11 +75,8 @@
       <record>false</record>
       <prompt>62b595b3-e393-4c1a-979d-255d4487fa8c.8e263845-87f0-4a65-93f8-e005f4a6b80a.prompt</prompt>
       <isMultiSelect>false</isMultiSelect>
-      <link>
-        <refId>58d0d759-0c59-4310-9989-081a7a273863</refId>
-        <refName>D</refName>
-      </link>
-      <sourceDelimiter>|</sourceDelimiter>
+      <dynPickListKey>2453yg</dynPickListKey>
+      <sourceDelimiter>2312r124124124</sourceDelimiter>
     </userInputBinding>
     <userInputBinding id="e6014808-0185-4405-bff5-e8bf51b9dc36">
       <annotation></annotation>
