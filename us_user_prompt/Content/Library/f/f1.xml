@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <flow id="62b595b3-e393-4c1a-979d-255d4487fa8c">
-  <descriptionCdata><![CDATA[62b595b3-e393-4c1a-979d-255d4487fa8c.09d3017c-6797-4311-945b-53fe20c440bf.prompt=message1
+  <descriptionCdata><![CDATA[62b595b3-e393-4c1a-979d-255d4487fa8c.5ec5bac4-145d-47b2-b0cd-1decf312e902.prompt=message1
 62b595b3-e393-4c1a-979d-255d4487fa8c.8e263845-87f0-4a65-93f8-e005f4a6b80a.prompt=message2
 62b595b3-e393-4c1a-979d-255d4487fa8c.b462e9b9-42d2-4f8f-83fb-bd659d7a55e1.description=<pre>This is an operation that does nothing. It can be used for filtering flow variables by feeding them in as inputs and filtering them on the results tab.\n\nResponses\:\n    success\n    failure\n</pre>
 62b595b3-e393-4c1a-979d-255d4487fa8c.e6014808-0185-4405-bff5-e8bf51b9dc36.prompt=message3
@@ -9,9 +9,10 @@
   <name>f1</name>
   <categories/>
   <inputs>
-    <userInputBinding id="09d3017c-6797-4311-945b-53fe20c440bf">
+    <userInputBinding id="5ec5bac4-145d-47b2-b0cd-1decf312e902">
       <annotation></annotation>
-      <assignFromContext>false</assignFromContext>
+      <fromContextKey>dsad</fromContextKey>
+      <assignFromContext>true</assignFromContext>
       <assignToContext>false</assignToContext>
       <inputType>STRING</inputType>
       <isList>false</isList>
@@ -20,12 +21,9 @@
       <inputSymbol>inp1</inputSymbol>
       <listDelimiter>,</listDelimiter>
       <record>false</record>
-      <prompt>62b595b3-e393-4c1a-979d-255d4487fa8c.09d3017c-6797-4311-945b-53fe20c440bf.prompt</prompt>
+      <prompt>62b595b3-e393-4c1a-979d-255d4487fa8c.5ec5bac4-145d-47b2-b0cd-1decf312e902.prompt</prompt>
       <isMultiSelect>false</isMultiSelect>
-      <link>
-        <refId>40e4562a-7197-45ee-9f36-e5d03f255b10</refId>
-        <refName>C</refName>
-      </link>
+      <dynPickListKey>manual_typed_data</dynPickListKey>
       <sourceDelimiter>|</sourceDelimiter>
     </userInputBinding>
     <identityBinding id="96d34f93-5d87-4a8f-ab4a-37cf98931e2f">
@@ -75,8 +73,27 @@
       <record>false</record>
       <prompt>62b595b3-e393-4c1a-979d-255d4487fa8c.8e263845-87f0-4a65-93f8-e005f4a6b80a.prompt</prompt>
       <isMultiSelect>false</isMultiSelect>
-      <dynPickListKey>2453yg</dynPickListKey>
+      <link>
+        <refId>77420593-642c-4462-a3ed-5ae0560a0384</refId>
+        <refName>B</refName>
+      </link>
       <sourceDelimiter>2312r124124124</sourceDelimiter>
+    </userInputBinding>
+    <userInputBinding id="54eaaa2e-7f81-45fe-a1ce-69390cbfbf87">
+      <annotation></annotation>
+      <assignFromContext>false</assignFromContext>
+      <assignToContext>false</assignToContext>
+      <inputType>STRING</inputType>
+      <isList>false</isList>
+      <required>false</required>
+      <isPersisted>true</isPersisted>
+      <inputSymbol>inppppp</inputSymbol>
+      <listDelimiter>,</listDelimiter>
+      <record>false</record>
+      <prompt></prompt>
+      <isMultiSelect>false</isMultiSelect>
+      <dynPickListKey>src_file</dynPickListKey>
+      <sourceDelimiter>|</sourceDelimiter>
     </userInputBinding>
     <userInputBinding id="e6014808-0185-4405-bff5-e8bf51b9dc36">
       <annotation></annotation>
@@ -94,7 +111,7 @@
       <dynPickListKey>inp1</dynPickListKey>
       <sourceDelimiter>|</sourceDelimiter>
     </userInputBinding>
-    <userInputBinding id="9d47abcb-4c2c-4d79-986f-9a9df0bdbebf">
+    <userInputBinding id="0c7de459-b158-490f-b063-2bfbf596b995">
       <annotation></annotation>
       <assignFromContext>false</assignFromContext>
       <assignToContext>false</assignToContext>
@@ -107,8 +124,8 @@
       <record>false</record>
       <prompt></prompt>
       <isMultiSelect>false</isMultiSelect>
-      <dynPickListKey>inp1</dynPickListKey>
-      <sourceDelimiter></sourceDelimiter>
+      <dynPickListKey>demo var name</dynPickListKey>
+      <sourceDelimiter>|</sourceDelimiter>
     </userInputBinding>
     <userInputBinding id="3c4fe48f-6b87-4597-815d-41592bac18ed">
       <annotation></annotation>
